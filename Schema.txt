@@ -1,41 +1,41 @@
 CREATE TABLE Cars(  
-car_id INT AUTO_INCREMENT PRIMARY KEY,  
-brand VARCHAR(50),  
-model VARCHAR(50),  
-manufaturer_year INT,  
-vin VARCHAR (17),  
-color VARCHAR (20),  
-mileage INT,  
-status VARCHAR (16),  
-price INT (7) ); 
+  car_id INT AUTO_INCREMENT PRIMARY KEY,  
+  brand VARCHAR(50),  
+  model VARCHAR(50),  
+  manufaturer_year INT,  
+  vin VARCHAR (17),  
+  color VARCHAR (20),  
+  mileage INT,  
+  status VARCHAR (16),  
+  price INT (7) ); 
 
 CREATE TABLE Repossession ( 
-repo_id INT AUTO_INCREMENT PRIMARY KEY,  
-car_id INT,  
-repo_date DATE,  
-repo_location VARCHAR (100)  
+  repo_id INT AUTO_INCREMENT PRIMARY KEY,  
+  car_id INT,  
+  repo_date DATE,  
+  repo_location VARCHAR (100)  
 );  
 
 CREATE TABLE Customers(  
-customer_id INT AUTO_INCREMENT PRIMARY KEY, 
-name VARCHAR (100), 
-contact_number VARCHAR (15), 
-email VARCHAR (100),  
-address VARCHAR (255)  
+  customer_id INT AUTO_INCREMENT PRIMARY KEY, 
+  name VARCHAR (100), 
+  contact_number VARCHAR (15), 
+  email VARCHAR (100),  
+  address VARCHAR (255)  
 ); 
 
 CREATE TABLE Sales(  
-sale_id INT AUTO_INCREMENT PRIMARY KEY,  
-car_id INT,  
-customer_id INT,  
-user_id INT, 
-sale_date DATE,  
-sale_price INT  
+  sale_id INT AUTO_INCREMENT PRIMARY KEY,  
+  car_id INT,  
+  customer_id INT,  
+  user_id INT, 
+  sale_date DATE,  
+  sale_price INT  
 ); 
 
 CREATE TABLE Users(  
-user_id INT AUTO_INCREMENT PRIMARY KEY, 
-username VARCHAR (50),  
-user_password VARCHAR (16),  
-role VARCHAR(16) 
+  user_id INT AUTO_INCREMENT PRIMARY KEY, 
+  username VARCHAR (50),  
+  user_password VARCHAR (16),  
+  role VARCHAR(16) 
 ); 
